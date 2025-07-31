@@ -6,6 +6,7 @@
 ![Current Version PyPI](https://img.shields.io/pypi/v/autobasedoc.svg)
 ![Python Version](https://img.shields.io/pypi/pyversions/autobasedoc.svg)
 ![License](https://img.shields.io/github/license/NuCOS/autobasedoc.svg)
+![Test Coverage](./coverage.svg)
 
 AutoBaseDoc is a Python library that extends ReportLab's capabilities to provide automated PDF document generation with sophisticated layout management, matplotlib integration, and professional styling. It's designed for creating reports, documentation, and complex multi-page documents with minimal code.
 
@@ -322,6 +323,44 @@ For commercial support and custom development, contact: contact@nucos.de
 - ReportLab team for the excellent PDF library
 - Matplotlib community for visualization tools
 - Contributors and users providing feedback and improvements
+
+## 🧪 Testing
+
+AutoBaseDoc includes comprehensive test coverage to ensure reliability and compatibility.
+
+### Running Tests
+
+```bash
+# Install test dependencies
+pip install pytest pytest-cov coverage faker
+
+# Run all tests
+pytest
+
+# Run tests with coverage report
+pytest --cov=autobasedoc --cov-report=html
+
+# Run specific test files
+pytest tests/test_autoplot.py
+pytest test_fixes.py
+```
+
+### Test Coverage
+
+Current test coverage: **48%** (see badge above)
+
+The test suite includes:
+- **Unit tests** for core functionality
+- **Integration tests** for document generation
+- **Frame logic tests** for layout management
+- **ReportLab compatibility tests**
+
+### Continuous Integration
+
+Tests are automatically run on:
+- Python 3.8, 3.9, 3.10, 3.11, 3.12
+- Ubuntu latest
+- Every push and pull request
 
 ## 🔗 Links
 

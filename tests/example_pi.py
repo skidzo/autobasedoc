@@ -232,7 +232,7 @@ content.append(ar.PageBreak())
 
 # Create Table Of Contents. Override the level styles (optional)
 # and add the object to the story
-toc = ar.doTabelOfContents()
+toc = ar.doTableOfContents()
 content.append(ar.Paragraph(u"Inhaltsverzeichnis", styles.h1))
 content.append(toc)
 

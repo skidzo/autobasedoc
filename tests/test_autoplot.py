@@ -249,7 +249,7 @@ class Test_AutoBaseDoc(unittest.TestCase):
         # Override the level styles (optional)
         # and add the object to the story
         """
-        toc = ar.doTabelOfContents()
+        toc = ar.doTableOfContents()
         self.contents.append(ar.Paragraph(para, self.styles.h1))
         self.contents.append(toc)
 

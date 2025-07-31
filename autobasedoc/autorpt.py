@@ -1083,7 +1083,7 @@ class BottomSpacer(Spacer):
             return (self.width, height)
 
 
-def doTabelOfContents():
+def doTableOfContents():
     """
     returns toc with 3 customized headings level styles
     """
