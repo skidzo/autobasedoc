@@ -1,13 +1,40 @@
+[build-system]
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autobasedoc"
+dynamic = ["version"]
+description = "autobasedoc - convenience reportlab tool"
+authors = [
+    {name = "Oliver Braun, Johannes Eckstein", email = "johannes.eckstein@nucos.de"}
+]
+license = {text = "BSD"}
+requires-python = ">=3.7"
+dependencies = [
+    "reportlab",
+    "pdfrw",
+    "svglib", 
+    "cycler", 
+    "matplotlib>=3.5",
+    "img2pdf"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "coverage",
+    "faker",
+    "numpy"
+]
+
 [tool.pytest.ini_options]
 testpaths = ["tests", "test_fixes.py"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
 addopts = [
-    "--cov=autobasedoc",
-    "--cov-report=term-missing",
-    "--cov-report=html:htmlcov",
-    "--cov-report=xml:coverage.xml",
     "-v"
 ]
 markers = [
