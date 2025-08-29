@@ -4,13 +4,23 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "autobasedoc"
-dynamic = ["version"]
+version = "1.1.11"
 description = "autobasedoc - convenience reportlab tool"
+readme = "README.md"
 authors = [
     {name = "Oliver Braun, Johannes Eckstein", email = "johannes.eckstein@nucos.de"}
 ]
-license = {text = "BSD"}
+license = "BSD-3-Clause"
 requires-python = ">=3.7"
+keywords = ["reporting"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6"
+]
 dependencies = [
     "reportlab",
     "pdfrw",

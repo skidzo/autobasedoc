@@ -2,11 +2,10 @@
 
 import os
 import sys
+import unittest
 
 #from distutils.core import setup
-from setuptools import setup, find_packages
-
-import unittest
+from setuptools import find_packages, setup
 
 name = "autobasedoc"
 
@@ -96,30 +95,12 @@ for dirname, dirnames, filenames in os.walk('doc'):
 
 setup(name=name,
       version=version,  # PEP440
-      description='autobasedoc - convenience reportlab tool',
-      long_description=long_description,
-      url='https://github.com/NuCOS/autobasedoc',
-      download_url = 'https://github.com/NuCOS/autobasedoc/tarball/'+version,
-      author='Oliver Braun, Johannes Eckstein',
-      author_email='johannes.eckstein@nucos.de',
-      license='BSD',
-      # https://pypi.python.org/pypi?%3Aaction=list_classifiers
-      classifiers=[
-          'Development Status :: 1 - Planning',
-          'Environment :: Console',
-          'License :: OSI Approved :: BSD License',
-          'Natural Language :: English',
-          'Operating System :: OS Independent',
-          'Programming Language :: Python :: 3.5',
-          'Programming Language :: Python :: 3.6'
-      ],
-      keywords='reporting',
+      # Metadaten und Abhängigkeiten werden jetzt in pyproject.toml gepflegt
       packages=packages,
       package_dir=package_dir,
       package_data=package_data,
       scripts=scripts,
       data_files=data_files,
       #test_suite='setup.my_test_suite', 
-      install_requires=['reportlab','pdfrw','svglib', 'cycler', 'matplotlib>=3.5','img2pdf'],
       include_package_data=True,
       )
