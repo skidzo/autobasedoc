@@ -416,6 +416,7 @@ class StyledTable(object):
         return table
 
     def layoutStyledTable(self, hTableAlignment=None, colWidths=None,
+                          rowHeights=None,
                           spaceBefore=None, spaceAfter=None, rightPadding=0,
                           pre=False, factor=1):
         """
@@ -472,6 +473,11 @@ class StyledTable(object):
         else:
             colWidthsResult = None
 
+        if rowHeights is not None:
+            rowHeightsResult = [x * cm for x in rowHeights]
+        else:
+            rowHeightsResult = None
+
         if spaceBefore is not None:
             self.spaceBefore = spaceBefore
         if spaceAfter is not None:
@@ -481,6 +487,7 @@ class StyledTable(object):
             return self
         else:
             table = Table(self.tableData, colWidths=colWidthsResult,
+                            rowHeights=rowHeightsResult,
                             spaceBefore=self.spaceBefore * cm, spaceAfter=self.spaceAfter * cm)
             tableStyle = self.handleStyleCommands()
             table.setStyle(tableStyle)

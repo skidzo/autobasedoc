@@ -1,57 +1,8 @@
-AutoBaseDoc - Professionelle PDF-Automatisierung
-================================================
+:orphan:
 
-AutoBaseDoc ist eine Python-Bibliothek für die automatisierte Erstellung 
-professioneller PDF-Dokumente mit erweiterten Layout-Funktionen.
+AutoBaseDoc
+===========
 
-Hauptfeatures
-------------
-
-🎨 **Flexible Layouts**
-   - Portrait- und Landscape-Formate
-   - Mehrspaltige Designs  
-   - Automatische Frame-Verwaltung
-
-📊 **Matplotlib-Integration**
-   - Nahtlose Plot-Einbettung
-   - Automatische Bildgrößenanpassung
-   - Konsistente Schriftarten
-
-📑 **Automatische Navigation**
-   - Inhaltsverzeichnisse mit Links
-   - PDF-Bookmarks
-   - Seitenreferenzen
-
-✨ **Styling-System**
-   - Vordefinierte Stile
-   - TTF-Font-Unterstützung
-   - Farbmanagement
-
-Schnellstart
------------
-
-.. code-block:: python
-
-    import autobasedoc.autorpt as ar
-    
-    # Dokument erstellen
-    doc = ar.AutoDocTemplate("report.pdf")
-    styles = ar.Styles()
-    
-    # Inhalt hinzufügen
-    content = []
-    content.append(ar.Paragraph("Mein Titel", styles.title))
-    
-    # PDF generieren
-    doc.multiBuild(content)
-
-Architektur
-----------
-
-Das Paket besteht aus mehreren Modulen:
-
-- ``autorpt``: Kern-Dokumentfunktionalität
-- ``autoplot``: Matplotlib-Integration  
-- ``styles``: Styling-System
-- ``pageinfo``: Seiteninformationen
-- ``fonts``: Font-Management
+The primary user-facing documentation lives in ``README.md`` and the Sphinx
+pages referenced from ``index.rst``. This file is kept only as a lightweight
+landing page for older documentation workflows.

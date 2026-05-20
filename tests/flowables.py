@@ -94,6 +94,7 @@ def create_info_table(left_flow=None, right_flow=None, colWidths=[10, 10]):
 def create_table(body=None,
                      header=None,
                      colWidths=None,
+                     rowHeights=None,
                      hTableAlignment=ar.TA_LEFT,
                      withHLines=True,
                      gridded=False,
@@ -147,7 +148,8 @@ def create_table(body=None,
         spaceBefore=spaceBefore,
         spaceAfter=spaceAfter,
         rightPadding=rightPadding,
-        colWidths=colWidths)
+        colWidths=colWidths,
+        rowHeights=rowHeights)
     return table
 
 def create_img_table(body=None,

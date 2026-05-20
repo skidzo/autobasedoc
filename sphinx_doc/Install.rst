@@ -1,49 +1,54 @@
 .. _installation:
 
-Install
-=======
+Installation
+============
 
-Simple
-------
+PyPI
+----
 
-.. index:: Install
+Install the published package with pip:
 
-If you want it simple, go to a console an type:
+.. code-block:: bash
 
-.. code-block:: python
+   pip install autobasedoc
 
-    pip install autobasedoc
+Development Setup
+-----------------
 
-With virtualenv
----------------
+For local development from a checkout:
 
-Otherwise it may also be recommended to install it into a virtual environment. To that end type in a console:
+.. code-block:: bash
 
-.. code-block:: python
+   git clone https://github.com/NuCOS/autobasedoc.git
+   cd autobasedoc
+   pip install -e .
 
-    virtualenv venv
-    source ./venv/bin/activate
-    pip install autobasedoc
+Test Dependencies
+-----------------
 
-Using Miniconda/Anaconda
-------------------------
+Install the optional test dependencies before running the full suite:
 
-I prefer miniconda but the package does not exist for conda, yet:
+.. code-block:: bash
 
-.. code-block:: python
-
-    conda create -n abd-env
-
-    source activate abd-env
-
-    pip install autobasedoc
+   pip install -e ".[test]"
 
 Python Compatibility
 --------------------
 
-The module is compatible with Python 3.4+, currently Python 3.7.3, we do not support older Python 2.7+ anymore.
+AutoBaseDoc currently requires Python 3.7 or newer.
+
+Headless Test Runs
+------------------
+
+When running tests without a graphical desktop, set the Matplotlib backend
+explicitly:
+
+.. code-block:: bash
+
+   MPLBACKEND=Agg pytest -q
 
 Platforms
 ---------
 
-The module is platform independent. Up to now it is tested on linux (ubuntu). Other platforms will follow (at least Windows 10 should work).
+The package is intended to be platform independent and is used primarily from
+standard Python environments on Linux, macOS, and Windows.

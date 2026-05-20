@@ -6,7 +6,7 @@ AutoBaseDoc is a Python library for automated creation of professional
 PDF documents with advanced layout features.
 
 Key Features
------------
+------------
 
 🎨 **Flexible Layouts**
    - Portrait and landscape formats
@@ -47,7 +47,7 @@ Quick Start
     doc.multiBuild(content)
 
 Architecture
------------
+------------
 
 The package consists of several modules:
 

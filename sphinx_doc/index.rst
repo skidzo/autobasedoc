@@ -1,60 +1,19 @@
-.. autobasedoc documentation master file, created by
-   sphinx-quickstart on Wed Nov 15 14:10:12 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Welcome to autobasedoc's documentation
+======================================
 
-Welcome to autobasedoc's documentation!
-=======================================
+AutoBaseDoc builds on ReportLab and Matplotlib to automate PDF generation with
+page templates, flowable helpers, styled tables, headers, footers, and table of
+contents support.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents
 
-.. include:: Install.rst
-
-.. include:: Basic_Usage.rst
-
-.. include:: Example.rst
-
-.. automodule:: autobasedoc.autoplot
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-.. automodule:: autobasedoc.autorpt
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-.. automodule:: autobasedoc.pageinfo
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-.. automodule:: autobasedoc.fonts
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-.. automodule:: autobasedoc.pdfimage
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-.. automodule:: autobasedoc.styledtable
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-.. automodule:: autobasedoc.styles
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-.. automodule:: autobasedoc.tableofcontents
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   Install
+   Basic_Usage
+   Example
+   Tutorials
+   API_Reference
 
 Indices and tables
 ==================
